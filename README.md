@@ -1,30 +1,60 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/gNIqS1ZK)
-# Program 3
-(area and width)
+//Program 3
+//Extension of program 2 that now asks for user input when assigning the length and width of the sides
+import java.util.Scanner; //This imports the console scanner that reads user input
 
-## Program Description:  
-- Find the area and perimeter of rectangle when the user inputs a length and a width.
-- Choose variable names which are meaningful for this problem, like Area, Width, etc.
-- Users should be prompted to input values with text
+//Your code here:
+public class Program3 {
+    public static void main(String[] args){
+        //make a scanner
+        Scanner myScanner = new Scanner(System.in); 
+        
+        //create variables
+        int length = 0;
+        int width = 0;
+        int area = 0;
+        int perimeter = 0;
+        
+        //ask for user input
+        System.out.println("Please enter the length: ");
+        length = myScanner.nextInt();
+        
+        
+        System.out.println("Please enter the width: ");
+        width = myScanner.nextInt(); 
+        
+        System.out.println("Please enter the perimeter; "); 
+        perimeter = myScanner.nextInt();
+        System.out.println("Please enter the area; ");
+        area = myScanner.nextInt(); 
+        
+        //get the input 
+        
+        //calculate
+        area = width * length;
+        perimeter= length + width + length + width; 
+        //output
+        System.out.println("The length is:" + length); 
+        System.out.println("The width is:" + width);
+        System.out.println("The perimeter is:" + perimeter); 
+        System.out.println("The area is:" + area);
+    }
+}
 
 
-### Statements Required: 
-- System.out
-- Variable Assignment
-- Scanner
 
-### Sample Output:
->Enter the length: 143
->
->Enter the width: 82
->
->-------------
->
->The Length is 143
->
->The width is 82
->
->
->The area is 11726
->
->The perimeter is 450
+//Paste console output below:
+/*
+Please enter the length: 
+12
+Please enter the width: 
+42
+Please enter the perimeter; 
+34
+Please enter the area; 
+67
+The length is:12
+The width is:42
+The perimeter is:108
+The area is:504
+
+*/
